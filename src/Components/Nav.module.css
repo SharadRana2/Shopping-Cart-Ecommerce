@@ -1,0 +1,43 @@
+.nav {
+  background-color: var(--helper-color);
+  height: 7vh;
+  display: flex;
+}
+.firstNav,
+.midNav,
+.lastNav {
+  flex: 1;
+}
+.firstNav {
+  justify-content: flex-start !important ;
+}
+.firstNav img {
+  max-height: 5vh;
+  max-width: 300px;
+}
+.navLinks,
+.navConnect {
+  display: flex;
+}
+.navLinks li,
+.navConnect li {
+  color: var(--helper-color2);
+  padding: 10px;
+  list-style: none;
+}
+.linkTo {
+  text-decoration: none;
+}
+.topLinks li:hover {
+  border-radius: 10px;
+  color: rgba(103, 28, 221, 1);
+}
+.itemNo {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  background-color: rgba(103, 28, 221, 1);
+  color: #fff;
+  margin-top: 20px;
+  margin-left: -10px;
+}

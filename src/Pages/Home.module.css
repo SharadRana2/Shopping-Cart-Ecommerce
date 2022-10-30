@@ -1,0 +1,131 @@
+.heroSection {
+  background-color: var(--black-color);
+  height: 85vh;
+  width: 100%;
+}
+.heroContent {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 70vw;
+  justify-content: space-between !important;
+}
+.mainText {
+  color: var(--white-color);
+  align-items: flex-start !important;
+  flex: 1;
+  padding: 3rem;
+}
+.mainHeading {
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(103, 28, 221, 1) 0%,
+    rgba(255, 255, 255, 1) 84%,
+    rgba(0, 0, 0, 1) 94%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+.subHeading {
+  font-size: 2rem;
+  padding: 4px;
+}
+.heroImageContainer {
+  flex: 1;
+  padding: 3rem;
+}
+.heroImg {
+  margin-top: 30px;
+  max-width: 28vw;
+  max-height: 80vh;
+}
+.btn {
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  color: var(--helper-color3);
+  background-color: transparent;
+  padding: 1rem 1rem 1rem 5px;
+}
+.btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/***********************************************************/
+.promoSection {
+  background-color: var(--white-color) !important;
+  min-height: 90vh;
+}
+.promoText {
+  color: var(--helper-color);
+}
+.promoHeading {
+  margin-top: 40px;
+  font-size: 3.5rem;
+}
+.promosubHeading {
+  color: rgb(75, 100, 75);
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.watchImg {
+  height: 60vh;
+  width: 80vw;
+}
+
+/**************************************/
+
+.moreProducts {
+  padding: 3rem;
+}
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 0.5rem;
+  grid-gap: 10px;
+}
+
+/**************************************/
+@media (max-width: 820px) {
+  .promoSection {
+    height: 50vh;
+    min-height: 50vh;
+  }
+  .watchImg {
+    padding-top: 3rem;
+    height: 25vh;
+  }
+  .productsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 416px) {
+  .heroSection {
+    width: 100vw;
+  }
+  .mainHeading {
+    font-size: 3rem;
+  }
+  .subHeading {
+    font-size: 1rem;
+  }
+  .heroContent {
+    flex-direction: column !important;
+  }
+  .heroImg {
+    margin-top: -30px;
+    max-width: 50vw;
+  }
+  .watchImg {
+    height: 18vh;
+  }
+  .promoSection {
+    min-height: 40vh;
+    height: 50vh;
+  }
+  .productsContainer {
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+  }
+}

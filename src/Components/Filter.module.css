@@ -1,0 +1,193 @@
+.sideBar {
+  background-color: var(--white-color);
+  padding: 2rem 2rem;
+  z-index: 997;
+  /* width: 25%; */
+  position: sticky;
+  top: 0;
+  overflow: auto;
+  min-height: 100vh;
+  height: 100%;
+  width: 25vw;
+}
+.checklist {
+  display: block;
+  position: relative;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 1.2rem;
+}
+.filterControl {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.btn {
+  background-color: var(--helper-color);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.priceFilter,
+.category-filter,
+.brand-filter,
+.stock-filter,
+.rating-filter {
+  display: flex;
+  flex-direction: column;
+}
+.subText {
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+.side-filter {
+  margin-bottom: 1.5rem;
+}
+
+.hrLine {
+  margin: 5px auto;
+  border: 1px solid var(--helper-color);
+  background-color: var(--helper-color);
+}
+
+/* Check box list */
+.check-list {
+  display: block;
+  position: relative;
+  padding-left: 2.9rem;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-list input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--primary-color);
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: var(--alt-text-color);
+}
+
+.check-list:hover input ~ .checkmark {
+  background-color: var(--secondary-color);
+}
+
+.check-list input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-list input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-list .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 7px;
+  border: solid var(--alt-text-color);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/**************radio******/
+.radioList {
+  display: block;
+  position: relative;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-list input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio input {
+  margin-left: 5px;
+  height: 1rem;
+  width: 1rem;
+  border: 1px solid var(--helper-color);
+  /* background-color: var(--helper-color); */
+  border-radius: 50%;
+}
+
+.radio-list:hover input ~ .radio {
+  background-color: var(--secondary-color);
+}
+
+.radio-list input:checked ~ .radio {
+  background-color: var(--primary-color);
+}
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-list input:checked ~ .radio:after {
+  display: block;
+}
+
+.radio-list .radio:after {
+  top: 3px;
+  left: 3.5px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--alt-text-color);
+}
+/***********/
+.clear-all-btn {
+  cursor: pointer;
+}
+.clear-all-btn:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+@media (max-width: 416px) {
+  .sideBar {
+    width: 42vw;
+  }
+  .filterControl {
+    font-size: 16px;
+  }
+  .subText {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 2px;
+  }
+  .radioList {
+    font-size: 14px;
+  }
+}
